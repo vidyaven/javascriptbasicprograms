@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function convertToBinary(x)
+        // {
+        //     var bin=0;
+        //     var rem,i=1,step=1;
+        //     while(x!=0)
+        //     rem=x%2;
+        //     console.log("step" +step++:"${x}"/2,+remainder=+${rem},+quotient=${parseInt(x/2)});
+        //     x=parseInt(x/2);
+        //     bin=bin+rem*i;
+        //     i=i*10;
+        // }
+        // console.log("binary:"+bin)
+        // }
+        // var number=prompt("enter a decimal number");
+        // convertToBinary(number)
+        function ToBinary(number){
+            var result=[],i;
+            for(i=number;i>0;i=parseInt(i/2)){
+                result.push(i%2);
+            }
+            return result.reverse().join("");
+        }
+        document.write("binary(11)="+ToBinary(11))
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=parseFloat(prompt("enter the 1st number:"));
+        var b=parseFloat(prompt("enter the 2nd number"));
+        var c=parseFloat(prompt("enter the 3rd number"));
+        var result1=a%10;
+        var result2=b%10;
+        var result3=c%10;
+        if(result1==result2&&result1==result3)
+        {
+            console.log("same digits"+a,+b,+c)
+        }
+        else
+        {
+            console.log("not same digits"+a,+b,+c) 
+        }
+    </script>
+</body>
+</html>

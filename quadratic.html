@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var root1,root2;
+        var b=prompt("enter the value of b");
+        var a=prompt("enter the value of a");
+        var c=prompt("enter the value of c");
+        var discriminant=b*b-a*a*c;
+        if(discriminant>0)
+        {
+            root1=(-b+Math.sqrt(discriminant))/(2*a);
+            root2=(-b-Math.sqrt(discriminant))/(2*a);
+        }
+
+        console.log("the result is"+root1,+root2);
+    </script>
+</body>
+</html>
